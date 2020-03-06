@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/shumovsky/Fridays-coding/issues"
   },
-  "homepage": "https://github.com/shumovsky/Fridays-coding#readme"
+  "homepage": "https://github.com/shumovsky/Fridays-coding#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
 }
