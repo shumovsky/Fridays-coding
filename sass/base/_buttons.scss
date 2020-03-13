@@ -1,33 +1,30 @@
 .button {
   @extend %font-prim;
   padding: 11px 25px 13px;
-  font-size: 1, 6rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 2, 2rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  border-radius: 4px;
   cursor: pointer;
-  transform: all 0.3s;
-  -webkit-transform: all 0.3s;
-  -moz-transform: all 0.3s;
-  -ms-transform: all 0.3s;
-  -o-transform: all 0.3s;
+  @extend %transition;
   &_bordered {
-    background: $color-light;
-    border: 1px solid $color-border;
-    color: $color-text;
-    &:hover {
-      background: $color-hovered;
-      border-color: $color-hovered;
-    }
+      background: $color-light;
+      border: 1px solid $color-border;
+      color: $color-text;
+      &:hover {
+          background: $color-hovered;
+          border-color: $color-hovered;
+      }
   }
   &_colored {
-    background: $color-primary;
-    color: $color-light;
-    border: 1px solid $color-primary;
-    &:hover {
-      background: $color-additional;
-      border-color: $color-additional;
-    }
+      background: $color-primary;
+      color: $color-light;
+      border: 1px solid $color-primary;
+      &:hover {
+          background: $color-additional;
+          border-color: $color-additional;
+      }
   }
 }
 
@@ -36,6 +33,13 @@
   @extend %font-add;
   display: inline-flex;
   align-items: center;
+  transition: .3s;
+  &:hover {
+      color: $color-red;
+      .ico_play {
+          background-image: url("../img/icons/play-hover.svg");
+      }
+  }
 }
 
 .link-button__text {
